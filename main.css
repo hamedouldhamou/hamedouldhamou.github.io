@@ -7,8 +7,11 @@ html, body {
 
 }
 body {
+    
 padding: 0;
 margin: 0;
+margin-right:10px;
+margin-left:10px;
 }
 
 body:before {
@@ -18,28 +21,7 @@ body:before {
     width:0;
     margin-top:-32767px;
 }
-#wrapper:after, 
-#content:after { 
-    clear:both;
-    content:"";
-    display:block;
-    height:1%;
-    font-size:0;
-}
 
-#wrapper {
-    min-height:100%;
-    min-width:1020px;
-    margin-top:-60px;
-    background: #333;
-}
-* html #wrapper {height:100%;}
-
-#content {
-    min-height:0;/*haslayout IE7 = (float containment)*/
-    padding:0 50px 50px;
-}
-* html #content {display:inline-block;}
 
 .topnavigator {
     background-color: #333;
@@ -121,27 +103,84 @@ body:before {
 
 }
 
-#EXP
-{
-     position: relative;
-     left: 400px;
-     bottom: 927px;
-}
-#LAN
-{
-   position: relative;
-     left: 400px;
-     bottom: 930px; 
-}
 #page2
+{
+     margin-right:50px;
+	margin-left:50px;
+
+}
+
+#page2:after
 {  
+   content: "";
+    display: table;
+    clear: both; 
    
-    margin: 0 auto;
-   background-color: #333;
-    margin-bottom: -500px;
-    color:#ff6600;
-        overflow-x: hidden; 
-    
+}
+.column {
+    float: left;
+    width: 50%;
+}
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+	body{
+	margin-right:10px;
+	margin-left:10px;
+	}
+	nav li {
+		display:compact;
+	}
+	.portfolio img{
+	width:100%;
+	}
+}
+#education
+{
+   text-align:center;
+	padding-bottom:40px;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;  
+}
+#Proj{
+    text-align:center;
+	padding-bottom:40px;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+#skills{
+	text-align:center;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+#skills li{
+	display:inline;
+	padding-right:9px;
+	font-weight:200;
+	line-height:25px;
+	
+}
+
+#exp{
+	text-align:center;
+}
+
+#exp li{
+	font-weight:100;
+	display: inline-table;
+	padding-right:19px;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+	text-align:center;
+
+}
+#LAN{
+	text-align:center;
+}
+
+#LAN li{
+	font-weight:100;
+	display: inline-table;
+	padding-right:19px;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+	text-align:left;
 
 }
 #page3
@@ -161,9 +200,5 @@ body:before {
 {
     margin-bottom: -30px;
 }
-#Rescont
-{
-    position:relative;
-    left:300px;
-}
+
 

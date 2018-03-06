@@ -129,22 +129,64 @@
 <div id="page3">
      <a id="Projects" class="smooth"></a>
   <div class= "ctrlbl"> <h1>Projects</h1></div>
-    <h2>fewferfrefre</h2>
-        <h3>fwdfrefrefrefe</h3>
-        <h1>fdwfwefwefwfw</h1>
-        <h1>verwveferfr</h1><h2>fewferfrefre</h2>
-        <h3>fwdfrefrefrefe</h3>
-        <h1>fdwfwefwefwfw</h1>
-        <h1>verwveferfr</h1><h2>fewferfrefre</h2>
-        <h3>fwdfrefrefrefe</h3>
-        <h1>fdwfwefwefwfw</h1>
-        <h1>verwveferfr</h1><h2>fewferfrefre</h2>
-        <h3>fwdfrefrefrefe</h3>
-        <h1>fdwfwefwefwfw</h1>
-        <h1>verwveferfr</h1><h2>fewferfrefre</h2>
-        <h3>fwdfrefrefrefe</h3>
-        <h1>fdwfwefwefwfw</h1>
-        <h1>verwveferfr</h1>
+    <ul>
+        <li>  
+     <a href="#Project" onclick="toggle_visibility('project');">Smart Mirror</a>
+
+        </li>
+        <div id="project" style="display:none;">
+        <P>Steps to make the project(video):</P>
+            <video width="320" height="240" controls>
+  <source src="SmartMir.mp4" type="video/mp4">
+  <source src="SmartMir.mp4" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+           
+        <P>Interactive mirror created with
+Raspberry pi and a customised
+homemade alxa, coded using 
+Javascript and the Amazon 
+web service, it uses voice controle
+to execute features such as weather
+updates, newsfeed, clandar updates,
+and the ability to play videos.</P>
+            </div>
+       
+        <li>  
+     <a href="#Project" onclick="toggle_visibility('project2');">Finding The Panda</a>
+        </li>
+        <div id="project2" style="display:none;">
+        <p>Two-dimentional, two player,
+            console game implemented in C
+             with a map created using text files
+            and ASCII characters.</p>
+        </div>
+        
+           <li>  
+     <a href="#Project" onclick="toggle_visibility('project3');">Stellar(In progress)</a>
+        </li>
+          <div id="project3" style="display:none;">
+        <p>A student class registration and managment application using java and SQLite database.</p>
+        </div>
+            <li>  
+     <a href="#Project" onclick="toggle_visibility('project4');">Restaurant training app(In progress)</a>
+        </li>
+          <div id="project4" style="display:none;">
+        <p>A mobile application using swift and database, that allow the user to login to thier acount and navigate through the app that will display menu, tutorials and also have an admin page to modify the data in the database. </p>
+        </div>
+             </ul>
+   
+    <script type="text/javascript">
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+</script>
+   
+    
 </div>
         <div id="page4">
      <a id="Contacts" class="smooth"></a>

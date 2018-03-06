@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
-<div id="wrapper">
  <div class="topnavigator">
   <a class="active" href="#home">Home</a>
   <a href="#About">About</a>
@@ -191,9 +190,23 @@ and the ability to play videos.</P>
         <div id="page4">
      <a id="Contacts" class="smooth"></a>
   <div class= "ctrlbl"> <h1>Contacts</h1></div>
+            <div class="ContForm">
+<form method="post" action="mailto:hamedamokraneouldhamou@gmail.com" >
 
-            <h1>HERE GOES CONTACTS</h1>
-        </div>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Send Email">
+
+  </form>
 </div>
+        </div>
     </body>
 </html>
